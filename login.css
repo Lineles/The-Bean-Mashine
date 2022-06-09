@@ -1,0 +1,289 @@
+:root {
+  --primary-pink-color: #FF5678;
+  --secondary-green-color: #149770;
+  --primary-black-color: #1D1C1C;
+  --primary-darkgrey-color: #917D6E;
+  --secondary-gray-color: #F6F2EF; 
+  --primary-white-color:#FFFFFF;
+}
+
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+}
+
+h2{
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+}
+
+p, a {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+html,
+body {
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigations Bar */
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.nav-header{
+  color: var(--primary-pink-color);
+}
+
+.index-link:hover{
+   text-decoration: none;
+}
+
+.nav-about-selection{
+    margin-left: 16px;
+    color: var(--primary-black-color);  
+}
+
+.nav-login {
+    margin-left: 32px;
+    background-color: var(--primary-darkgrey-color);
+    padding: 4px 16px 4px 16px;
+    border-radius: 16px;
+    color: var(--primary-white-color);
+    display: none;
+}
+
+.nav-login:hover {
+  text-decoration: none;
+  background-color: var(--secondary-green-color);
+}
+
+/* Headder Section */
+header{
+      text-align: center;
+}
+
+/* Login Section */
+.login-area {
+    max-width: 550px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 24px;
+}
+
+.login-labels{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: var(--primary-darkgrey-color);
+    margin-top: 24px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.name-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.login-input-name{
+    text-align: left;
+    color: var(--primary-darkgrey-color);
+    background-color: var(--secondary-gray-color);
+    border: var(--secondary-gray-color);
+    border-radius: 16px;
+    font-size: 16px;
+    padding: 16px 24px 16px 16px;
+}
+
+.login-input-email-passwort{
+    text-align: left;
+    color: var(--primary-darkgrey-color);
+    background-color: var(--secondary-gray-color);
+    border: var(--secondary-gray-color);
+    border-radius: 16px;
+    font-size: 16px;
+    padding: 16px 62% 16px 16px;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.login-checkbox{
+    color: var(--primary-darkgrey-color);
+    padding-left: 16px;
+    accent-color: var(--secondary-green-color);
+}
+
+
+.login-button{
+    background-color: var(--secondary-green-color);
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    color: var(--primary-white-color);
+    font-weight: bold;
+}
+
+/* Footer Section */
+.footer{
+    background-color: var(--primary-black-color);
+    color: var(--primary-white-color);
+    text-align: center;
+    padding: 40px;
+}
+
+
+/***/
+/* Tablet */
+/***/
+@media  (max-width: 900px) {
+
+  /* Navigations Bar */
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 120px;
+  }
+   
+  .nav-links{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    row-gap: 4px;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .nav-login {
+    background-color: var(--primary-white-color);
+    padding: 0 0 0 0;
+    color: var(--primary-black-color)
+  }
+
+  .nav-login:hover {
+    text-decoration: underline;
+    background-color: var(--primary-white-color);
+  }
+
+  /* Login Section */
+  .login-checkbox{
+    color: var(--primary-darkgrey-color);
+    padding-left: 16px;
+    accent-color: var(--secondary-green-color);
+  }
+}   
+
+/***/
+/* Phone */
+/***/
+ @media  (max-width: 600px) {
+
+   
+  h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+  }
+   
+  /* Navigations Bar */
+  .nav-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .nav-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+  }
+   
+  .nav-about-selection {
+    margin-left: 8px;
+    color: var(--primary-black-color);
+  }
+
+  .nav-login {
+    margin-left: 32px;
+    background-color: var(--primary-darkgrey-color);
+    padding: 4px 16px 4px 16px;
+    border-radius: 16px;
+    color: var(--primary-white-color);
+  }
+
+  .nav-login:hover {
+    text-decoration: none;
+    background-color: var(--secondary-green-color);
+  }
+
+   /* Login Section */
+  .login-area {
+    max-width: 550px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-div-container {
+    text-align: center;
+  }
+
+  .login-input-email-passwort {
+    text-align: left;
+    color: var(--primary-darkgrey-color);
+    background-color: var(--secondary-gray-color);
+    border: var(--secondary-gray-color);
+    border-radius: 16px;
+    font-size: 16px;
+    padding: 15px 24px 16px 16px;
+  }
+   
+  .checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+   
+  .login-checkbox {
+    color: var(--primary-darkgrey-color);
+    accent-color: var(--secondary-green-color);
+    padding-left: 16px;
+    font-size: 12px;
+    max-width: 200px;
+  }   
+}
+
