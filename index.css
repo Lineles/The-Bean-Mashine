@@ -98,8 +98,8 @@ button:hover {
 }
 
 .input-flex{
-   display: flex;
-  flexdirection: row;
+  display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
 }
 
