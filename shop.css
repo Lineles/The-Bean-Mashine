@@ -86,22 +86,49 @@ button:hover {
     align-items: center;
   }
 
-  .shop-sort-label{
-    color: var(--primary-black-color);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-  }
+  /* Dropdown Button */
+.dropbtn {
+  background-color: var(--secondary-green-color);
+  color: white;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 16px;
+}
 
-  .shop-price-details{
-    background-color: var(--secondary-gray-color);
-    display: inline-block;
-    padding: 8px;
-    color: var(--primary-black-color);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    position: right;
-    border-radius: 16px;  
-  }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--secondary-gray-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .drop-item{
+  color: black;
+  padding: 16px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content .drop-item:hover {
+  background-color: var(--secondary-green-color);
+  color: var(--primary-white-color);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--primary-pink-color);
+}
 
 /* Shop section */
   .main{
