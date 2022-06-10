@@ -135,12 +135,22 @@ header{
 
 
 .login-button{
-    background-color: var(--secondary-green-color);
-    border: none;
-    border-radius: 16px;
-    padding: 16px;
-    color: var(--primary-white-color);
-    font-weight: bold;
+  background-color: var(--secondary-green-color);
+  border: none;
+  border-radius: 16px;
+  margin-top: 16px;
+  padding: 16px;
+  color: var(--primary-white-color);
+  font-weight: bold;
+}
+
+.create-acc-button{
+  background-color: var(--secondary-green-color);
+  border: none;
+  border-radius: 16px;
+  padding: 16px;
+  color: var(--primary-white-color);
+  font-weight: bold;
 }
 
 /* Footer Section */
