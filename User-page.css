@@ -29,45 +29,45 @@
   }
   
   a:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   button:hover {
     background-color: var(--secondary-green-color);
   }
   
-  /* Navigations Bar */
-  .nav-container {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      margin-left: 80px;
-      margin-right: 80px;
-  }
-  
-  .nav-header{
+  /**Header**/
+
+  .h2-header{
     color: var(--primary-pink-color);
   }
+ 
+
+  /* Navigations Bar */
   
-  .index-link:hover{
-     text-decoration: none;
+  .nav-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid 1px  #1D1C1C;
   }
-  
-  .nav-about-selection{
-      margin-left: 16px;
-      color: var(--primary-black-color);  
+
+  .nav-links, .nav-links-logout {
+    color: var(--primary-black-color);
+    width: 120px;
+    text-align: center;
+    border-radius: 0 0 24px 24px;
+    padding-bottom: 8px;
+    margin-left: 4px;
+    font-weight: 600;
   }
-  
-  .nav-login {
-      margin-left: 32px;
-      background-color: var(--primary-darkgrey-color);
-      padding: 4px 16px 4px 16px;
-      border-radius: 16px;
-      color: var(--primary-white-color);
-  }
-  
-  .nav-login:hover {
-    text-decoration: none;
+
+  .nav-links:hover{
     background-color: var(--secondary-green-color);
+    color: var(--primary-white-color);
+  }
+
+  .nav-links-logout:hover{
+    background-color: var(--primary-pink-color);
+    color: var(--primary-white-color);
   }
