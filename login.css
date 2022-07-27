@@ -130,7 +130,7 @@ header{
 .login-checkbox{
     color: var(--primary-darkgrey-color);
     padding-left: 16px;
-    accent-color: var(--secondary-green-color);
+    /* accent-color: var(--secondary-green-color) */
 }
 
 
@@ -202,7 +202,7 @@ header{
   .login-checkbox{
     color: var(--primary-darkgrey-color);
     padding-left: 16px;
-    accent-color: var(--secondary-green-color);
+    /* accent-color: var(--secondary-green-color); */
   }
 }   
 
@@ -290,7 +290,7 @@ header{
    
   .login-checkbox {
     color: var(--primary-darkgrey-color);
-    accent-color: var(--secondary-green-color);
+    /* accent-color: var(--secondary-green-color); */
     padding-left: 16px;
     font-size: 12px;
     max-width: 200px;

@@ -33,19 +33,19 @@
   </header>
 
   <section> 
-    <form action="User-page.html" class="login-area">
+    <form class="login-area">
       <div class="name-container">
         <div class="login-div-container">
           <label class="login-labels">Username:</label>
-          <input type="Text" placeholder="CofeeMaster" class="login-input-name" required> 
+          <input type="Text" placeholder="CofeeMaster" id="loginName" class="login-input-name" required> 
         </div>
     
         <div class="login-div-container">    
           <label class="login-labels">Passwort:</label>
-          <input type="password" placeholder="*********" class="login-input-name" required> 
+          <input type="password" placeholder="*********" id="loginPassword" class="login-input-name" required> 
         </div>
       </div>
-      <button class="login-button">Login</button>
+      <button onclick="login()" type="submit" class="login-button">Login</button>
     </form>
   </section>
 
@@ -56,39 +56,36 @@
   </header>
 
   <main>
-    <form action="User-page.html" class="login-area">
+    <form class="login-area">
       <div class="name-container">
         <div class="login-div-container">
           <label class="login-labels">Name:</label>
-          <input type="Text" placeholder="Greer Lilas" class="login-input-name" required> 
+          <input type="Text" placeholder="Greer Lilas" id="registrationName" class="login-input-name" required> 
         </div>
     
         <div class="login-div-container">    
           <label class="login-labels">Username:</label>
-          <input type="Text" placeholder="CoffeeMaster" class="login-input-name" required> 
+          <input type="Text" placeholder="CoffeeMaster" id="registrationUserName" class="login-input-name" required> 
         </div>
       </div>
         
       <div class="login-div-container">
         <label class="login-labels">Email:</label>
-        <input type="Email" placeholder="greer@gmail.com" class="login-input-email-passwort" required> 
+        <input type="Email" placeholder="greer@gmail.com" id="registrationEmail" class="login-input-email-passwort" required> 
       </div>
     
       <div class="login-div-container">
         <label class="login-labels">Passwort:</label>
-        <input type="password" placeholder="*********" class="login-input-email-passwort" required> 
+        <input type="password" placeholder="*********" id="registrationPassword" class="login-input-email-passwort" required> 
       </div>
 
       <div class="checkbox"> 
-        <input type="checkbox" class="login-checkbox" required> 
+        <label>First name: <input type="checkbox" id="registrationNewsLetter" class="login-checkbox" required> </label>
         <p class="login-checkbox">I want to receive the Bean Machine newsletter</p>
       </div>
-      <button class="create-acc-button">Create Account</button>
+      <button class="create-acc-button" onclick="createAcc()" type="submit"> Create Account </button>
     </form>
   </main>
-
-
-
 
 
 
@@ -97,5 +94,16 @@
     <p> Find us on social media </p>
      
   </footer>
+
+<script src="login.js">
+    let name = document.getElementById("registrationName").value                    
+    let email = document.getElementById("registrationEmail").value
+    let password =document.getElementById("registrationPassword").value
+    let newsletter = document.getElementById("registrationNewsLetter").value
+    let username = document.getElementById("registrationUserName").value
+
+
+</script>
+
 </body>
 </html>
